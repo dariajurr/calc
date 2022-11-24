@@ -1,0 +1,129 @@
+@font-face {
+  font-family: Quantico;
+  src: url("/fonts/Quantico-Regular.ttf");
+}
+
+@font-face {
+  font-family: Inter;
+  src: url("/fonts/Inter-Regular.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.calculator {
+  background: linear-gradient(180deg, #424242 0%, #2B2B2B 100%);
+  border-radius: 36px;
+  max-width: 312px;
+  margin: 25px auto;
+  padding: 16px;
+  
+}
+
+.calculator__title {
+  font-family: 'Quantico', sans-serif;
+  font-size: 32px;
+  line-height: 1.43;
+  color: #fff;
+  margin: 0 0 8px 16px;
+}
+
+
+.calculator__result {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 48px;
+  background: #fff;
+  border-radius: 16px;
+  font-family: 'Inter';
+  font-size: 13px;
+  color: rgba(0,0,0,0.8);
+  padding: 0 8px;
+  margin-bottom: 9px;
+}
+
+.calculator__items {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 64px 64px;
+  grid-template-areas:
+    "a a b c"
+    "d d e f";
+  gap: 8px;
+  margin-bottom: 11px;
+}
+
+.calculator__input {
+  border: none;
+  background: #FFFFFF;
+  border-radius: 16px;
+  width: 134px;
+  padding: 0 8px;
+} 
+
+.calculator__input::placeholder {
+  font-family: 'Inter';
+  font-size: 13px;
+  color: rgba(0,0,0,0.8);
+}
+
+.calculator__btn {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  border: none;  
+  font-family: 'Quantico';
+  font-size: 32px;
+  line-height: 1.43;
+  text-align: center;
+  color: #fff;  
+  padding: 6px 0 12px;
+  grid-area: b;
+  transition: opacity .5s, background-color .5s, color .5s;
+  cursor: pointer;
+}
+
+.calculator__btn:hover {
+  opacity: .8;
+}
+
+.calculator__btn:active {
+  opacity: .6;
+}
+
+.calculator__input_first-number {
+  grid-area: a;
+}
+
+.calculator__input_second-number {
+  grid-area: d;
+}
+
+.calculator__btn_plus {
+  grid-area: b;
+}
+
+.calculator__btn_minus {
+  grid-area: c;
+}
+
+.calculator__btn_times {
+  grid-area: e;
+}
+
+.calculator__btn_divide {
+  grid-area: f;
+}
+
+.calculator__btn_equal {
+  width: 100%;
+  background: #FD9C01;
+}
+
+.light{
+  background-color: #fff;
+  color: #474747;
+}
