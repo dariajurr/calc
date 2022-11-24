@@ -1,11 +1,11 @@
 @font-face {
   font-family: Quantico;
-  src: url("/fonts/Quantico-Regular.ttf");
+  src: url("fonts/Quantico-Regular.ttf");
 }
 
 @font-face {
   font-family: Inter;
-  src: url("/fonts/Inter-Regular.ttf");
+  src: url("fonts/Inter-Regular.ttf");
 }
 
 * {
