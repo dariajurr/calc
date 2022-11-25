@@ -61,7 +61,6 @@
   border: none;
   background: #FFFFFF;
   border-radius: 16px;
-  width: 134px;
   padding: 0 8px;
 } 
 
@@ -126,4 +125,14 @@
 .light{
   background-color: #fff;
   color: #474747;
+}
+
+
+@media screen and (max-width: 425px) {
+  .calculator {
+    margin: 0;
+    height: 100vh;
+    max-width: 100%;
+    border-radius: 0;
+  }
 }
